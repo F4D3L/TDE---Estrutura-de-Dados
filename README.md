@@ -67,7 +67,7 @@ cd "1. Flood Algorithm"
 | Métrica | Valor |
 |---------|-------|
 | 📁 **TDEs Concluídos** | 1 |
-| ⭐ **Pontuação Total** | 10/10 |
+| ⭐ **Pontuação Total** | x/10 |
 | 📝 **Linhas de Código** | ~1500+ |
 | 🏗️ **Classes Implementadas** | 10+ |
 | 🧪 **Estruturas de Dados** | Stack, Queue |
@@ -100,10 +100,8 @@ cd "1. Flood Algorithm"
 - **Algoritmos de Travessia** - DFS-like vs BFS-like
 
 ### 🔄 **Em Desenvolvimento**
-- **Árvores Binárias**
-- **Grafos**
-- **Hash Tables**
-- **Algoritmos de Ordenação**
+- **A definir**
+
 
 ---
 
@@ -142,7 +140,7 @@ Este repositório demonstra progressão nos seguintes conceitos:
 
 ### 🚀 **Para Entusiastas**
 1. **Implementações Próprias:** Sem dependências externas
-2. **Visualizações:** Saídas gráficas e animações
+2. **Visualizações:** Saídas gráficas
 3. **Comparações:** Diferentes abordagens para mesmo problema
 
 ---
@@ -221,7 +219,8 @@ Este repositório contém trabalhos acadêmicos desenvolvidos exclusivamente par
 
 ## 📜 Licença
 
-Este projeto está sob licença acadêmica - desenvolvido exclusivamente para fins educacionais na disciplina de Estrutura de Dados.
+Este projeto está sob licença acadêmica - desenvolvido exclusivamente para fins educacionais na disciplina de Estrutura de Dados do curso
+de Engenharia de Software - PUCPR.
 
 ---
 
@@ -230,6 +229,5 @@ Este projeto está sob licença acadêmica - desenvolvido exclusivamente para fi
 **🎓 Engenharia de Software - Estrutura de Dados**  
 *"Construindo o futuro, uma estrutura de dados por vez"*
 
-⭐ **Se este repositório foi útil, deixe uma estrela!** ⭐
 
 </div>
