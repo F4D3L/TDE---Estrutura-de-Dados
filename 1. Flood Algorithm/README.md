@@ -135,7 +135,7 @@ Execute o arquivo `run.bat` (Windows) ou `run.sh` (Linux/Mac) para compilar e ex
 
 ## Autores
 
-- [Nome dos Integrantes da Equipe]
+- Guilherme Celli Fadel
 - Disciplina: Resolução de Problemas Estruturados em Computação
 - Professor: Lisiane Reips
 - Curso: Bacharelado em Engenharia de Software
