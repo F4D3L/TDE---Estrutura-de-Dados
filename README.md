@@ -185,7 +185,7 @@ X. Nome do TDE/
 
 ### 📧 **Contato Acadêmico**
 - **Disciplina:** Resolução de Problemas Estruturados em Computação
-- **Instituição:** [Nome da Universidade]
+- **Instituição:** Pontifícia Universidade Católica do Paraná
 - **Período:** 2025.2
 
 ### ⚠️ **Nota Importante**
@@ -210,10 +210,7 @@ Este repositório contém trabalhos acadêmicos desenvolvidos exclusivamente par
 - [x] Comparação de abordagens (Stack vs Queue)
 
 ### 🚀 **Próximos Passos**
-- [ ] Estruturas de dados avançadas (Árvores, Grafos)
-- [ ] Algoritmos de ordenação e busca
-- [ ] Análise de complexidade
-- [ ] Otimizações de performance
+- A definir
 
 ---
 
