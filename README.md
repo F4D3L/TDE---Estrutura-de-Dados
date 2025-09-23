@@ -34,7 +34,7 @@ Este repositório contém todos os **Trabalhos Dirigidos Externos (TDEs)** desen
 
 ### 🎨 **TDE 1: Algoritmo Flood Fill**
 **Status:** ✅ Concluído  
-**Pontuação:** 10/10 pontos  
+**Pontuação:** X/10 pontos  
 **Conceitos:** Pilha, Fila, Algoritmos de Preenchimento  
 
 #### 📖 Descrição
