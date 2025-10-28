@@ -23,8 +23,8 @@ public class Main {
         int imageHeight = 100;
         
         // Coordenadas do ponto inicial para o flood fill (área branca)
-        int startX = 17;  // Ponto em área branca
-        int startY = 69;  // Ponto em área branca
+        int startX = 41;  // Ponto em área branca
+        int startY = 60;  // Ponto em área branca
         
         // Nova cor (azul) para pintar os pixels brancos
         int newColor = ImageProcessor.rgbToInt(0, 0, 255);

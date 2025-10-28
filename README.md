@@ -23,8 +23,17 @@ Este repositório contém todos os **Trabalhos Dirigidos Externos (TDEs)** desen
 │   ├── 📄 README.md               # Documentação específica
 │   ├── 📄 run.bat                 # Script de execução (Windows)
 │   └── 📄 run.sh                  # Script de execução (Linux/Mac)
-├── 📁 2. [Próximo TDE]/           # TDE 2 - Em desenvolvimento
-├── 📁 3. [Próximo TDE]/           # TDE 3 - Em desenvolvimento
+├── 📁 2. Código Morse/            # TDE 2 - Tradutor Código Morse
+│   ├── 📄 Main.java               # Interface principal
+│   ├── 📄 ArvoreCodigoMorse.java  # Implementação da árvore
+│   ├── � PopularArvore.java      # População e codificação
+│   └── 📄 No.java                 # Nó da árvore binária
+├── 📁 3. Hash Mapping/            # TDE 3 - Tabela Hash
+│   ├── 📄 Main.java               # Interface principal
+│   ├── 📄 TabelaHash.java         # Implementação da tabela hash
+│   ├── 📄 No.java                 # Nó da lista encadeada
+│   ├── 📄 female_names.txt        # Base de dados
+│   └── 📄 README.md               # Documentação específica
 └── 📄 README.md                   # Este arquivo
 ```
 
@@ -34,7 +43,6 @@ Este repositório contém todos os **Trabalhos Dirigidos Externos (TDEs)** desen
 
 ### 🎨 **TDE 1: Algoritmo Flood Fill**
 **Status:** ✅ Concluído  
-**Pontuação:** X/10 pontos  
 **Conceitos:** Pilha, Fila, Algoritmos de Preenchimento  
 
 #### 📖 Descrição
@@ -62,15 +70,83 @@ cd "1. Flood Algorithm"
 
 ---
 
+### 📡 **TDE 2: Tradutor de Código Morse**
+**Status:** ✅ Concluído  
+**Conceitos:** Árvore Binária, Árvore de Decisão, HashMap  
+
+#### 📖 Descrição
+Sistema interativo de tradução bidirecional entre texto e código Morse. Utiliza uma **árvore binária de decisão** para decodificação (onde `.` vai para esquerda e `-` para direita) e um **HashMap** para codificação rápida.
+
+#### 🛠️ Tecnologias
+- **Linguagem:** Java 8+
+- **Estruturas:** Árvore Binária, HashMap, StringBuilder
+- **Paradigma:** POO com Herança
+
+#### ⚡ Execução Rápida
+```bash
+cd "2. Código Morse"
+javac *.java
+java Main
+```
+
+#### 🎯 Principais Funcionalidades
+- ✅ Decodificação Morse → Texto usando árvore binária
+- ✅ Codificação Texto → Morse usando HashMap
+- ✅ Suporte a palavras e frases completas
+- ✅ Interface de menu interativo
+- ✅ Tratamento de espaços e separadores
+
+#### 📊 Como Funciona
+- **Decodificação:** Navega pela árvore seguindo `.` (esquerda) e `-` (direita)
+- **Codificação:** Busca direta no HashMap para conversão instantânea
+- **Separadores:** Espaço entre letras, ` / ` entre palavras
+
+---
+
+### 🗂️ **TDE 3: Sistema de Gerenciamento com Tabela Hash**
+**Status:** ✅ Concluído  
+**Conceitos:** Tabela Hash, Encadeamento, Função Hash, Lista Ligada  
+
+#### 📖 Descrição
+Sistema de gerenciamento de nomes femininos utilizando **Tabela Hash com encadeamento** (chaining) para tratamento de colisões. Carrega 5000+ nomes de arquivo e oferece operações CRUD completas com análise estatística detalhada da distribuição de dados.
+
+#### 🛠️ Tecnologias
+- **Linguagem:** Java 8+
+- **Estruturas:** Tabela Hash, Lista Encadeada
+- **I/O:** Leitura de arquivo texto
+- **Paradigma:** Programação Orientada a Objetos
+
+#### ⚡ Execução Rápida
+```bash
+cd "3. Hash Mapping"
+javac *.java
+java Main
+```
+
+#### 🎯 Principais Funcionalidades
+- ✅ Tabela Hash com função hash customizada (soma ASCII)
+- ✅ Tratamento de colisões por encadeamento
+- ✅ Operações: Inserir, Buscar, Remover
+- ✅ Carregamento automático de 5000+ nomes
+- ✅ Estatísticas detalhadas (fator de carga, colisões, distribuição)
+- ✅ Interface de menu interativo
+
+#### 📊 Análise de Performance
+- **Função Hash:** Soma de valores ASCII mod tamanho da tabela
+- **Complexidade Média:** O(1 + α) onde α = fator de carga
+- **Tratamento:** Lista encadeada em cada bucket
+- **Estatísticas:** Fator de carga ~50.01, 100% de ocupação
+
+---
+
 ## 📊 Estatísticas do Repositório
 
 | Métrica | Valor |
 |---------|-------|
-| 📁 **TDEs Concluídos** | 1 |
-| ⭐ **Pontuação Total** | x/10 |
-| 📝 **Linhas de Código** | ~1500+ |
-| 🏗️ **Classes Implementadas** | 10+ |
-| 🧪 **Estruturas de Dados** | Stack, Queue |
+| 📁 **TDEs Concluídos** | 3 |
+| 📝 **Linhas de Código** | ~2500+ |
+| 🏗️ **Classes Implementadas** | 16+ |
+| 🧪 **Estruturas de Dados** | Stack, Queue, Árvore Binária, HashMap, Tabela Hash, Lista Encadeada |
 
 ---
 
@@ -85,10 +161,10 @@ cd "1. Flood Algorithm"
 ![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)
 
 ### Conceitos Aplicados
-- **Estruturas de Dados:** Pilha, Fila, Arrays Dinâmicos
-- **Algoritmos:** Flood Fill, Busca em Largura/Profundidade
-- **POO:** Encapsulamento, Modularização, Interfaces
-- **Manipulação de Arquivos:** Leitura/Escrita de imagens PNG
+- **Estruturas de Dados:** Pilha, Fila, Árvore Binária, Tabela Hash, Lista Encadeada, Arrays Dinâmicos
+- **Algoritmos:** Flood Fill, Busca em Largura/Profundidade, Função Hash, Travessia de Árvore
+- **POO:** Encapsulamento, Herança, Modularização, Interfaces
+- **Manipulação de Dados:** Leitura/Escrita de imagens PNG, Processamento de arquivos texto, I/O
 
 ---
 
@@ -97,9 +173,13 @@ cd "1. Flood Algorithm"
 ### ✅ **Já Implementados**
 - **Stack (Pilha)** - LIFO (Last In, First Out)
 - **Queue (Fila)** - FIFO (First In, First Out)
-- **Algoritmos de Travessia** - DFS-like vs BFS-like
+- **Árvore Binária** - Estrutura hierárquica para decisões
+- **Tabela Hash** - Acesso direto com função hash
+- **Lista Encadeada** - Estrutura dinâmica para colisões
+- **HashMap** - Mapeamento chave-valor para busca O(1)
+- **Algoritmos de Travessia** - DFS-like, BFS-like, Árvore de Decisão
 
-### 🔄 **Em Desenvolvimento**
+### 🔄 **Próximos Tópicos**
 - **A definir**
 
 
@@ -110,19 +190,22 @@ cd "1. Flood Algorithm"
 Este repositório demonstra progressão nos seguintes conceitos:
 
 ### 🧠 **Estruturas de Dados**
-- Compreensão profunda de Stack e Queue
+- Compreensão profunda de Stack, Queue, Árvore Binária e Tabela Hash
 - Implementação própria vs uso de bibliotecas
 - Análise de complexidade temporal e espacial
+- Tratamento de colisões e otimizações
 
 ### 🔧 **Programação**
 - Princípios de POO aplicados corretamente
-- Modularização e responsabilidades de classes
+- Herança e composição de classes
+- Modularização e responsabilidades bem definidas
 - Tratamento de erros e casos excepcionais
 
 ### 🎨 **Algoritmos**
 - Algoritmos de preenchimento e travessia
+- Função hash e distribuição de dados
 - Comparação de diferentes abordagens
-- Otimização e eficiência
+- Otimização e análise de eficiência
 
 ---
 
@@ -173,11 +256,11 @@ X. Nome do TDE/
 
 ## 📊 Cronograma de Desenvolvimento
 
-| TDE | Título | Status | Prazo | Conceitos |
-|-----|--------|--------|-------|-----------|
-| 1️⃣ | **Flood Fill Algorithm** | ✅ Concluído | Set/2025 | Stack, Queue |
-| 2️⃣ | **[Próximo TDE]** | 🔄 Em desenvolvimento | Out/2025 | - |
-| 3️⃣ | **[Próximo TDE]** | ⏳ Planejado | Nov/2025 | - |
+| TDE | Título | Status | Conceitos |
+|-----|--------|--------|-----------|
+| 1️⃣ | **Flood Fill Algorithm** | ✅ Concluído | Stack, Queue, Algoritmos de Preenchimento |
+| 2️⃣ | **Tradutor Código Morse** | ✅ Concluído | Árvore Binária, HashMap, Árvore de Decisão |
+| 3️⃣ | **Hash Mapping** | ✅ Concluído | Tabela Hash, Lista Encadeada, Função Hash |
 
 ---
 
@@ -204,13 +287,20 @@ Este repositório contém trabalhos acadêmicos desenvolvidos exclusivamente par
 ## 📈 Evolução do Conhecimento
 
 ### 🎯 **Metas Alcançadas**
-- [x] Implementação própria de estruturas básicas
-- [x] Algoritmos de preenchimento
+- [x] Implementação própria de estruturas básicas (Stack, Queue)
+- [x] Algoritmos de preenchimento e travessia
 - [x] Processamento de imagens
 - [x] Comparação de abordagens (Stack vs Queue)
+- [x] Implementação de Árvore Binária de Decisão
+- [x] Sistema de codificação/decodificação bidirecional
+- [x] Tabela Hash com tratamento de colisões
+- [x] Análise estatística de distribuição de dados
+- [x] Interface interativa com menu de opções
 
 ### 🚀 **Próximos Passos**
-- A definir
+- Explorar estruturas avançadas (AVL, B-Tree, etc.)
+- Implementar algoritmos de ordenação
+- Grafos e algoritmos de caminho mínimo
 
 ---
 
@@ -221,10 +311,4 @@ de Engenharia de Software - PUCPR.
 
 ---
 
-<div align="center">
 
-**🎓 Engenharia de Software - Estrutura de Dados**  
-*"Construindo o futuro, uma estrutura de dados por vez"*
-
-
-</div>
